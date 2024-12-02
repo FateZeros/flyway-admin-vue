@@ -1,0 +1,18 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"verbatimModuleSyntax": false,
+		"noImplicitAny": false,
+
+		"types": ["element-plus/global", "@cool-vue/vite-plugin/client", "./env.d.ts"],
+		"paths": {
+			"/@/*": ["./src/*"],
+			"/$/*": ["./src/modules/*"],
+			"/#/*": ["./src/plugins/*"],
+			"/~/*": ["./packages/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+	"exclude": ["node_modules", "dist"]
+}
