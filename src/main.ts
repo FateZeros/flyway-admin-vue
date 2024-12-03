@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import { bootstrap } from './cool';
+import { bootstrap } from './flyway';
 
 const app = createApp(App);
 

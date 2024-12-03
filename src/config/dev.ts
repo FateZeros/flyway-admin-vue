@@ -1,4 +1,4 @@
-import { getUrlParam, storage } from '/@/cool/utils';
+import { getUrlParam, storage } from '/@/flyway/utils';
 import { proxy } from './proxy';
 
 export default {
