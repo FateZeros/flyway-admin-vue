@@ -34,7 +34,7 @@
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue';
-import { useCool } from '/@/flyway';
+import { useFlyway } from '/@/flyway';
 import { useBase } from '/$/base';
 
 const props = defineProps({
@@ -42,7 +42,7 @@ const props = defineProps({
 	desc: String
 });
 
-const { router } = useCool();
+const { router } = useFlyway();
 const { user } = useBase();
 
 const isLogout = ref(false);

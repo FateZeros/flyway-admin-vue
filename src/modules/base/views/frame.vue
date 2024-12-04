@@ -6,12 +6,12 @@
 
 <script lang="ts" name="frame" setup>
 import { ref, watch, onMounted } from 'vue';
-import { useCool } from '/@/flyway';
+import { useFlyway } from '/@/flyway';
 
 const loading = ref(false);
 const url = ref();
 
-const { route, refs, setRefs } = useCool();
+const { route, refs, setRefs } = useFlyway();
 
 watch(
 	() => route,

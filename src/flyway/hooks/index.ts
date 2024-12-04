@@ -39,7 +39,7 @@ export function useParent(name: string, r: Ref) {
 	return r;
 }
 
-export function useCool() {
+export function useFlyway() {
 	return {
 		service,
 		route: useRoute(),

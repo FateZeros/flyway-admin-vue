@@ -95,7 +95,7 @@ router.append = function (data) {
 
 					d.component = () => import('/$/base/views/frame.vue');
 				} else {
-					d.component = files['/src/' + url.replace('cool/', '')];
+					d.component = files['/src/' + url.replace('flyway/', '')];
 				}
 			} else {
 				if (!d.redirect) {
