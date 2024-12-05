@@ -42,6 +42,7 @@ async function refresh() {
 	isError.value = false;
 	svg.value = '';
 	base64.value = '';
+	console.log(service.base, '1');
 
 	await service.base.open
 		.captcha({
@@ -74,11 +75,11 @@ async function refresh() {
 }
 
 onMounted(() => {
-	// refresh();
+	refresh();
 });
 
 defineExpose({
-	// refresh
+	refresh
 });
 </script>
 

@@ -1,0 +1,24 @@
+#app {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+:root {
+	--view-bg-color: #f7f7f7;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	outline: none;
+}
+
+input {
+	&:-webkit-autofill {
+		box-shadow: 0 0 0px 1000px white inset;
+	}
+}

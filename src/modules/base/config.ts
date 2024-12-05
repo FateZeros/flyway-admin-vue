@@ -1,7 +1,7 @@
 import type { ModuleConfig } from '/@/flyway';
 import { useStore } from './store';
 import { config } from '/@/config';
-// import './static/css/index.scss';
+import './static/css/index.scss';
 
 export default (): ModuleConfig => {
 	return {

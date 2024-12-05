@@ -8,7 +8,8 @@ const list: Module[] = hmr.getData('modules', []);
 // 模块对象
 const module = {
 	list,
-	dirs: ctx.modules,
+	// dirs: ctx?.modules,
+	dirs: [],
 	req: Promise.resolve(),
 	get(name: string): Module {
 		return this.list.find(e => e.name == name)!;

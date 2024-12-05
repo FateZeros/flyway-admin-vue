@@ -66,9 +66,9 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(vue@3.5.13(typescript@5.5.4))
     devDependencies:
-      '@cool-vue/vite-plugin':
-        specifier: ^7.2.4
-        version: 7.2.4
+      '@flywayjs/vite-plugins':
+        specifier: ^1.0.1
+        version: 1.0.1
       '@rushstack/eslint-patch':
         specifier: ^1.10.4
         version: 1.10.4
@@ -308,9 +308,6 @@ packages:
   '@cool-vue/crud@7.2.3':
     resolution: {integrity: sha512-TItRbZBGrTcHby9iKWG27PxD9KppUnfDXEj7ZCn8s41p8+5g3za2O1UU12xj/1/UhEqq9xbkDlyDeseJuxLdug==}
 
-  '@cool-vue/vite-plugin@7.2.4':
-    resolution: {integrity: sha512-lRVoCHeOQ+ZYnpCbVtfTGafdQ/glpb9Nk4YydGseNjVoXLfeJBGkZx2xsHOt54fjlFQMWyi+k4Qo28Ymgigtsg==}
-
   '@ctrl/tinycolor@3.6.1':
     resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
     engines: {node: '>=10'}
@@ -500,6 +497,9 @@ packages:
 
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
+
+  '@flywayjs/vite-plugins@1.0.1':
+    resolution: {integrity: sha512-QBPK12AehWPR/4rQvLZpn/IJAKL6YBPGLVoOgGd662ZnrXNl5Y1WM938l/lo/p4h7Cmh475zKykIWZiQrdHBEQ==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2819,19 +2819,6 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  '@cool-vue/vite-plugin@7.2.4':
-    dependencies:
-      '@vue/compiler-sfc': 3.5.13
-      axios: 1.7.8
-      glob: 10.4.5
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      magic-string: 0.30.14
-      prettier: 3.4.1
-      svgo: 3.3.2
-    transitivePeerDependencies:
-      - debug
-
   '@ctrl/tinycolor@3.6.1': {}
 
   '@element-plus/icons-vue@2.3.1(vue@3.5.13(typescript@5.5.4))':
@@ -2956,6 +2943,19 @@ snapshots:
       '@floating-ui/utils': 0.2.8
 
   '@floating-ui/utils@0.2.8': {}
+
+  '@flywayjs/vite-plugins@1.0.1':
+    dependencies:
+      '@vue/compiler-sfc': 3.5.13
+      axios: 1.7.8
+      glob: 10.4.5
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      magic-string: 0.30.14
+      prettier: 3.4.1
+      svgo: 3.3.2
+    transitivePeerDependencies:
+      - debug
 
   '@humanfs/core@0.19.1': {}
 

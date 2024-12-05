@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import compression from 'vite-plugin-compression';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { proxy } from './src/config/proxy';
-import { cool } from '@cool-vue/vite-plugin';
+import { flyway } from '@flywayjs/vite-plugins';
 
 function toPath(dir: string) {
 	return fileURLToPath(new URL(dir, import.meta.url));
@@ -22,7 +22,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
 			compression(),
 			vueJsx(),
 			// vueDevTools(),
-			cool({
+			flyway({
 				type: 'admin',
 				proxy,
 				eps: {

@@ -34,7 +34,7 @@ export const config = {
 	ignore: {
 		// 不显示请求进度条
 		NProgress: [
-			'/__cool_eps',
+			'/__flyway_eps',
 			'/base/open/eps',
 			'/base/comm/person',
 			'/base/comm/permmenu',
